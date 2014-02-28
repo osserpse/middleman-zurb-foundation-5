@@ -1,8 +1,12 @@
-# Middleman Template: ZURB Foundation #
+# middleman-zurb-foundation-5
+
+Baserat på https://github.com/axyz/middleman-zurb-foundation men anpassat för mina behov.
+
+## Middleman Template: ZURB Foundation 5
 
 middleman-zurb-foundation is a minimal [Middleman](http://middlemanapp.com/) project template with the [SASS](http://sass-lang.com/) version of the [ZURB Foundation](http://foundation.zurb.com/) Framework.
 
-## Installation ##
+### Installation ##
 
 Make sure to have:
 
@@ -27,7 +31,7 @@ Now you can start hacking on `source` directory and watch live changes on [local
 
 For more help follow [Middleman's project template instructions](http://middlemanapp.com/getting-started/welcome/) or feel free to hit me up on [Twitter](http://twitter.com/axyz).
 
-## ZURB Foundation License ##
+### ZURB Foundation License
 
 Copyright (c) 2011 ZURB, http://www.zurb.com/
 
