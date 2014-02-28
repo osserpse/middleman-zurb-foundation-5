@@ -5,13 +5,13 @@
 compass_config do |config|
   # Require any additional compass plugins here.
   config.add_import_path "bower_components/foundation/scss"
-  
+
   # Set this to the root of your project when deployed:
-  config.http_path = "/"
-  config.css_dir = "stylesheets"
-  config.sass_dir = "stylesheets"
-  config.images_dir = "images"
-  config.javascripts_dir = "javascripts"
+  config.http_path       = "/"
+  config.css_dir         = "assets/stylesheets"
+  config.sass_dir        = "assets/stylesheets"
+  config.images_dir      = "assets/images"
+  config.javascripts_dir = "assets/javascripts"
 
   # You can select your preferred output style here (can be overridden via the command line):
   # output_style = :expanded or :nested or :compact or :compressed
@@ -74,17 +74,15 @@ end
 #   end
 # end
 
-# Add bower's directory to sprockets asset path
-after_configuration do
-  @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
-  sprockets.append_path File.join "#{root}", @bower_config["directory"]
-end
+sprockets.append_path "bower_components/foundation/js"
+sprockets.append_path "bower_components/modernizr"
+sprockets.append_path "bower_components/jquery"
 
-set :css_dir, 'stylesheets'
+set :css_dir, '/assets/stylesheets'
 
-set :js_dir, 'javascripts'
+set :js_dir, '/assets/javascripts'
 
-set :images_dir, 'images'
+set :images_dir, '/assets/images'
 
 activate :livereload
 
